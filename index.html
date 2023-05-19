@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Bucks
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle">
+
+        </div>
+        <header>
+            <a href="#" >
+                <img src="logo.png" class="logo" alt="logo">
+            </a>
+            <ul>
+                <li> <a href="#">Home</a>
+                </li>
+                <li><a href="#">Menu</a> </li>
+                <li><a href="#">What's New</a> </li>
+                <li> <a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just Coffee<br>It's <span>Starbucks</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus laudantium amet iure nulla iste. Blanditiis, officia nulla, nam maxime culpa exercitationem fugiat laborum obcaecati dignissimos enim sint quod aperiam illum recusandae iure.
+                </p>
+                <a href="#"> Learn More</a>
+               
+            </div>
+            <div class="imgBox">
+                <img src="img1.png" alt="img" class="starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li> <img src="thumb1.png" alt="" onclick="imgSlider('img1.png');changeColor('#017143')"> </li>
+            <li> <img src="thumb2.png" alt="" onclick="imgSlider('img2.png');changeColor('#eb7495')">  </li>
+            <li> <img src="thumb3.png" alt="" onclick="imgSlider('img3.png');changeColor('#d752b1')"> </li>
+        </ul>
+        <ul class="sci">
+            <li> <a href="#"> <img src="facebook.png" alt="img"> </a> </li>
+            <li> <a href="#"> <img src="instagram.png" alt="img"> </a> </li>
+            <li> <a href="#"> <img src="twitter.png" alt="img"> </a> </li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.starbucks').src = anything;
+        }
+        function changeColor(color){
+const circle = document.querySelector('.circle');
+circle.style.background = color;
+        }
+    </script>
+</body>
+</html>
